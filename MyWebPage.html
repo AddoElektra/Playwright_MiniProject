@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.form-control {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to My Web Page</h1>
+		<form>
+			<label for="userid">User ID:</label>
+			<input type="text" id="userid" class="form-control" placeholder="Enter your User ID">
+			
+			<label for="password">Password:</label>
+			<input type="password" id="password" class="form-control" placeholder="Enter your Password">
+			
+			<button class="button" type="submit">Search</button>
+		</form>
+		
+		<p>Forgot your password? <a href="#">Click here</a> to reset it.</p>
+		
+		<h2>Recent Updates</h2>
+		<ul>
+			<li><a href="#">Update 1</a></li>
+			<li><a href="#">Update 2</a></li>
+			<li><a href="#">Update 3</a></li>
+		</ul>
+		
+		<h3>Visit Google</h3>
+		<ul>
+			<li><a href="www.google.com">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+			<li><a href="#">Link 3</a></li>
+		</ul>
+	</div>
+	
+	<script>
+		// Add event listener to the submit button
+		document.querySelector('.button').addEventListener('click', function(event) {
+			event.preventDefault();
+			alert('You clicked the Search button!');
+		});
+	</script>
+</body>
+</html>

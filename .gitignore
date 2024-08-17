@@ -1,0 +1,13 @@
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/tests/example.spec.js/
+/tests/date16.spec.js/
+tests/day2.spec.js/  
+/tests/day2mine.spec.js/
+   /tests/day3.spec.js/ 
+   tests/day5.spec.js/
+ /tests/day7.spec.js/
+  /tests/ex.spec.js/
