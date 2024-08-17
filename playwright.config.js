@@ -32,6 +32,9 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     testIdAttribute: 'data-pd-t'
   },
+  shard : true,
+numWorkers:5,
+  workerIndex:0,
 
   /* Configure projects for major browsers */
   projects: [
