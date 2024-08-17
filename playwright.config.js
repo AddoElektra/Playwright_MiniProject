@@ -22,7 +22,10 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [ 
+    ['html'],
+    ['blob'],
+   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -32,9 +35,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     testIdAttribute: 'data-pd-t'
   },
-  shard : true,
-numWorkers:5,
-  workerIndex:0,
+  
 
   /* Configure projects for major browsers */
   projects: [
