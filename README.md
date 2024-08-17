@@ -1,2 +1,2 @@
 Preconditions
-  n[pm init playwright
+  npm init playwright 
